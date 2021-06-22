@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        android:id="@+id/btn_satu"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+        android:layout_toRightOf="@+id/btn_satu"
+        android:id="@+id/btn_dua"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        android:layout_toRightOf="@+id/btn_satu"
+        android:layout_below="@+id/btn_dua"
+        android:id="@+id/btn_tiga"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan"
+        android:layout_above="@+id/btn_tengah"
+        android:layout_alignBaseline="@+id/btn_tengah"
+        android:id="@+id/btn_kanan"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_tengah"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kiri"
+        android:layout_above="@+id/btn_tengah"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/btn_tengah"
+        android:id="@+id/btn_kiri"/>
+
+
+
+</RelativeLayout>
+
+    <!--RelativeLayout-->
+    <!--1. relasi dengan widget/view lainnya = "Butuh ID"-->
+    <!--2. relasi dengan  parent/view group-->
+    <!--3. relasi dengan widget dan parent/view group-->
